@@ -1,0 +1,30 @@
+# 忽略 node_modules
+node_modules/
+
+# 打包输出目录
+build/
+dist/
+
+# 忽略配置文件
+*.config.js
+*.config.cjs
+*.config.mjs
+
+# 忽略锁文件
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 忽略日志文件
+*.log
+
+# 忽略环境变量文件
+.env
+.env.*
+
+# 忽略 public 文件夹（通常存放静态资源）
+public/
+
+# 可选：忽略某些特定类型的文件
+*.min.js
+*.min.css

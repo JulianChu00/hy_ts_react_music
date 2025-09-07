@@ -1,0 +1,23 @@
+# 顶层配置，找到这个文件就停止向上查找
+root = true
+
+# 所有文件通用规则
+[*]
+charset = utf-8             # 文件编码
+end_of_line = lf            # 换行符
+insert_final_newline = true # 文件末尾加空行
+trim_trailing_whitespace = true # 去掉行尾空格
+
+# 缩进规则
+[*.{js,ts,jsx,tsx,vue,css,scss,less,html,json,md}]
+indent_style = space
+indent_size = 2
+
+# 对 YAML 文件用 2 个空格缩进
+[*.yml]
+indent_style = space
+indent_size = 2
+
+# 对 Makefile 文件保留 Tab 缩进
+[Makefile]
+indent_style = tab
